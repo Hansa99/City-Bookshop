@@ -1,0 +1,6 @@
+5b4e0c04-7476-4a01-ab72-e0c2a4af89c5;dsada;1500.0;Science Fiction
+fbf10939-9126-4db0-8633-12adff7e2db3;aadsad;5000.0;Biography
+520591ae-fea3-4e71-8ca7-a2f640de1094;world war 2;1500.0;History
+c06336f6-c609-4f14-b544-1edae510a2f7;world war 1;1500.0;History
+3e679d55-9d76-49d2-8c1d-529235a5783c;Sea;5000.0;Fantasy
+c3abe37f-0c3b-415c-9091-29678aa9e130;Space;5000.0;Mystery

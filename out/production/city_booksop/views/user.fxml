@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserController">
+   <children>
+      <TableView fx:id="tblMainTable" layoutX="14.0" layoutY="206.0" prefHeight="379.0" prefWidth="868.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="183.0" text="Full Name" />
+          <TableColumn fx:id="colEmail" prefWidth="226.0" text="Email" />
+            <TableColumn fx:id="colUserType" prefWidth="116.0" text="User Type" />
+            <TableColumn fx:id="colUsername" prefWidth="191.0" text="Username" />
+            <TableColumn fx:id="colPassword" prefWidth="151.0" text="Password" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="15.0" layoutY="88.0" prefHeight="25.0" prefWidth="220.0" promptText="Full Name" />
+      <JFXTextField fx:id="txtEmail" labelFloat="true" layoutX="246.0" layoutY="88.0" prefHeight="25.0" prefWidth="187.0" promptText="Email" />
+      <JFXTextField fx:id="txtUsername" labelFloat="true" layoutX="599.0" layoutY="88.0" promptText="Username" />
+      <JFXTextField fx:id="txtPassword" labelFloat="true" layoutX="748.0" layoutY="88.0" promptText="Password">
+          
+      </JFXTextField>
+      <JFXComboBox fx:id="comboType" layoutX="449.0" layoutY="88.0" promptText="Selete User Type" />
+      <JFXButton fx:id="btnSave" layoutX="612.0" layoutY="145.0" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: blue;" text="Save" textFill="WHITE" />
+      <JFXButton fx:id="btnUpdate" layoutX="701.0" layoutY="145.0" onAction="#btnUpdateOnAction" prefWidth="77.0" style="-fx-background-color: green;" text="Update" textFill="WHITE" />
+      <JFXButton fx:id="btnDelete" layoutX="788.0" layoutY="145.0" onAction="#btnDeleteOnAction" prefWidth="77.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE" />
+      <JFXButton fx:id="btnExit" layoutX="870.0" layoutY="4.0" onAction="#btnExitOnAction" prefHeight="25.0" prefWidth="26.0" style="-fx-background-color: red;" text="X" textFill="WHITE" />
+      <JFXButton fx:id="btnBack" layoutX="839.0" layoutY="4.0" onAction="#btnBackOnAction" prefHeight="25.0" prefWidth="26.0" style="-fx-background-color: gray;" text="&lt;" textFill="WHITE" />
+      <Label layoutX="371.0" layoutY="14.0" text="Manage User">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

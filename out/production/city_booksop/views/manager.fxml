@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagerController">
+   <children>
+      <ImageView fx:id="btnBooks" fitHeight="125.0" fitWidth="119.0" layoutX="143.0" layoutY="138.0" onMouseClicked="#btnBooksonAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/10-101646_borrow-library-books-book-stack-books-icon-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnUser" fitHeight="131.0" fitWidth="162.0" layoutX="310.0" layoutY="135.0" onMouseClicked="#btnUaseOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/470-4703547_icon-user-icon-hd-png-download-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="138.0" layoutY="28.0" prefHeight="35.0" prefWidth="344.0" text="WELCOME TO CITY BOOKSOP">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="63.0" prefHeight="35.0" prefWidth="162.0" text=" MANAGER PANAL" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="273.0" text="MANAGE BOOKS" />
+      <Label layoutX="347.0" layoutY="273.0" text="MANAGE USERS" />
+      <JFXButton fx:id="btnBack" layoutX="570.0" layoutY="5.0" onAction="#btnBackOnAction" style="-fx-background-color: gray;" text="&lt;" textFill="WHITE" />
+   </children>
+</AnchorPane>
